@@ -1,0 +1,40 @@
+{
+  "name": "polygon",
+  "plural": "polygons",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "default": "Feature"
+    },
+    "properties": {
+      "type": "object",
+      "default": {}
+    },
+    "geometry": {
+      "type": "object",
+      "required": true,
+      "default": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-0.14007568359375, 51.5027589576403],
+            [-0.12325286865234374, 51.5027589576403],
+            [-0.12325286865234374, 51.512588580360244],
+            [-0.14007568359375, 51.512588580360244],
+            [-0.14007568359375, 51.5027589576403]
+          ]
+        ]
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
